@@ -1,37 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
     <title>Contatos</title>
 </head>
-<body>
-    <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
-    <h1>Entre em contato comigo</h1>
-
-
+<body id="contato">
+    <header>
+        <ul id="menu-contato">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </header>
+    <h1 class="center" id="ctt">Entre em contato comigo</h1>
+    <div class="flex-container">
+<div class="mr-lf mr-rg">
     <form>
         <label for="nome">Nome:</label>
         <input type="text" id="nome">
+        <br>
 
         <label for="email">Email:</label>
         <input type="email" id="email">
+        <br>
 
         <label for="assunto">Assunto:</label>
         <textarea name="assunto" id="assunto" cols="40" rows="4"></textarea>
 
         <button>Enviar</button>
     </form>
-    <h2>Endereço</h2>
-    <p>Rua Uva Natal, 311, Vila Natal</p>
-    <p>São Paulo, Sp</p>
-    <P>CEP: 04863-020</P>
+</div>
+<div class ="mr-lf mr-rg">
+    <p id="ctt">Rua Uva Natal, 311, Vila Natal</p>
+    <p id="ctt">São Paulo, Sp</p>
+    <p id="ctt">CEP: 04863-020</p>
     
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.468049989603!2d-46.7111761853786!3d-23.76634167507821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce48d563a61d17%3A0xa7ee33be93337fa7!2sR.%20Uva%20Natal%2C%20311%20-%20Vila%20Natal%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004863-020!5e0!3m2!1spt-BR!2sbr!4v1615873261744!5m2!1spt-BR!2sbr" 
-    width="400" height="250" style="border: 20px;;" allowfullscreen="" loading="lazy"></iframe>
+    width="200" height="250" style="border: 20px;;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+    </div>
+    
+<hr>
+    <footer>
+        <div class="flex-container">
+            <a href="https://www.facebook.com/profile.php?id=100000910643184" target="_blank"><img class="tm-social bo-rd" src="assets/img/facebook-preto.jpg" alt="Logotipo do Facebook"></a>
+            
+            <a href="https://www.linkedin.com/in/marcelo-souza-2a8189207/" target="_blank"> <img class="tm-social bo-rd" src="assets/img/linkein-icon3.png" alt="Logotipo do LinkedIn"></a>
+           
+           <a href="https://www.instagram.com/markandy_music/" target="_blank"> <img class="tm-social bo-rd" src="assets/img/instagram.png" alt="Logotipo do Instagram"></a>
+            <a href="https://github.com/MarceloSouzaEDM" target="_blank"><img class="tm-social bo-rd" src="assets/img/github.png" alt="Logotipo do GitHub"></a>
+        </div>
+        <p class="center" id="ctt">
+            Todos os direitos são reservados: Marcelo Souza &copy
+        </p>
+    </footer>
 </body>
 </html>
