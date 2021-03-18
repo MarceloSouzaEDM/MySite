@@ -19,19 +19,17 @@
     </header>
     <h1 class="center" id="ctt">Entre em contato comigo</h1>
     <div class="flex-container">
-<div class="mr-lf mr-rg">
+<div>
     <form>
         <label for="nome">Nome:</label>
-        <input type="text" id="nome">
-        <br>
-
+        <input type="text" id="nome" onkeyup= "validaNome()">
+        <div class="mr-bt" id="txtNome" ></div>
         <label for="email">Email:</label>
-        <input type="email" id="email">
-        <br>
-
+        <input type="email" id="email" onkeyup="validaEmail()">
+        <div class="mr-bt" id="txtEmail"></div>
         <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" cols="40" rows="4"></textarea>
-
+        <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validarAssunto()"></textarea>
+        <div class="mr-bt" id="txtAssunto"></div>
         <button>Enviar</button>
     </form>
 </div>
@@ -41,7 +39,7 @@
     <p id="ctt">CEP: 04863-020</p>
     
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.468049989603!2d-46.7111761853786!3d-23.76634167507821!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce48d563a61d17%3A0xa7ee33be93337fa7!2sR.%20Uva%20Natal%2C%20311%20-%20Vila%20Natal%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004863-020!5e0!3m2!1spt-BR!2sbr!4v1615873261744!5m2!1spt-BR!2sbr" 
-    width="200" height="250" style="border: 20px;;" allowfullscreen="" loading="lazy"></iframe>
+    width="350" height="250" style="border: 20px;;" allowfullscreen="" loading="lazy"></iframe>
 </div>
     </div>
     
@@ -59,5 +57,8 @@
             Todos os direitos são reservados: Marcelo Souza &copy
         </p>
     </footer>
+
+    <script src="assets/js/Script.js"></script>
 </body>
+
 </html>
